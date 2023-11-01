@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Enemies/Boss/BossProjectil.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Boss/wizard_attack.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 80, 240, 80, 80 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 160, 240, 80, 80 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 10, 3 )
+
+[node name="BossProjectil" type="Area2D"]
+collision_layer = 16
+script = ExtResource( 1 )
+
+[node name="Body" type="Position2D" parent="."]
+
+[node name="Sprite" type="AnimatedSprite" parent="Body"]
+frames = SubResource( 3 )
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 4 )
+[connection signal="body_entered" from="." to="." method="_on_BossProjectil_body_entered"]

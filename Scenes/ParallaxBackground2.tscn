@@ -1,0 +1,135 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Sprites/Background/sky.png" type="Texture" id=1]
+[ext_resource path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0008_3.png" type="Texture" id=2]
+[ext_resource path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0000_9.png" type="Texture" id=3]
+[ext_resource path="res://parallax/parallax-02.png" type="Texture" id=4]
+[ext_resource path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0002_7.png" type="Texture" id=5]
+[ext_resource path="res://caverns-files-web/caverns-files-web/layers/background.png" type="Texture" id=6]
+[ext_resource path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png" type="Texture" id=7]
+[ext_resource path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0005_5.png" type="Texture" id=8]
+[ext_resource path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0001_8.png" type="Texture" id=9]
+[ext_resource path="res://parallax/parallax-04.png" type="Texture" id=10]
+
+[node name="ParallaxBackground2" type="ParallaxBackground"]
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="ParallaxBackground" parent="ParallaxBackground2"]
+layer = -102
+scroll_offset = Vector2( 1, 0 )
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground2/Sky"]
+position = Vector2( 0, 264 )
+motion_scale = Vector2( 0.7, 1 )
+motion_mirroring = Vector2( 688, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground2/Sky/Sky"]
+position = Vector2( 656.516, 1.31587 )
+scale = Vector2( 6.98438, 2.07345 )
+texture = ExtResource( 6 )
+offset = Vector2( 1, 1 )
+
+[node name="Sky" type="Sprite" parent="ParallaxBackground2/Sky/Sky"]
+position = Vector2( -8.97143, -252 )
+scale = Vector2( 0.931972, 1.07812 )
+texture = ExtResource( 10 )
+centered = false
+offset = Vector2( 1, 1 )
+
+[node name="Sky2" type="Sprite" parent="ParallaxBackground2/Sky/Sky"]
+visible = false
+position = Vector2( 1.00002, 732.376 )
+scale = Vector2( 1.38578, -0.421128 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( 1, 1 )
+
+[node name="Mountain" type="Sprite" parent="ParallaxBackground2/Sky/Sky"]
+visible = false
+position = Vector2( 4.59914, -594.173 )
+scale = Vector2( 1.40086, 1.22468 )
+texture = ExtResource( 8 )
+centered = false
+offset = Vector2( 1, 0 )
+
+[node name="pine1" type="Sprite" parent="ParallaxBackground2/Sky/Sky"]
+position = Vector2( -39.3922, -570.189 )
+scale = Vector2( 1.39224, 1.18916 )
+texture = ExtResource( 7 )
+centered = false
+offset = Vector2( 1, 1 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground2/Sky/Sky"]
+visible = false
+position = Vector2( 406.5, 166.661 )
+scale = Vector2( 0.852371, 0.321563 )
+texture = ExtResource( 3 )
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground2/Sky/Sky"]
+visible = false
+position = Vector2( 334, 235.085 )
+scale = Vector2( 0.698276, 0.168978 )
+texture = ExtResource( 9 )
+
+[node name="Mountain" type="ParallaxBackground" parent="ParallaxBackground2"]
+layer = -101
+scroll_offset = Vector2( 1, 0 )
+
+[node name="Mountain" type="ParallaxLayer" parent="ParallaxBackground2/Mountain"]
+visible = false
+position = Vector2( 0, 323 )
+motion_scale = Vector2( 0.2, 1 )
+motion_mirroring = Vector2( 688, 0 )
+
+[node name="Mountain" type="Sprite" parent="ParallaxBackground2/Mountain/Mountain"]
+position = Vector2( 0, -45 )
+scale = Vector2( 0.477778, 0.680556 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Pine1" type="ParallaxBackground" parent="ParallaxBackground2"]
+scroll_offset = Vector2( 1, 0 )
+
+[node name="Pine1" type="ParallaxLayer" parent="ParallaxBackground2/Pine1"]
+motion_scale = Vector2( 0.7, 1 )
+motion_offset = Vector2( 1, 0 )
+motion_mirroring = Vector2( 688, 0 )
+
+[node name="Mountain" type="ParallaxBackground" parent="ParallaxBackground2/Pine1"]
+layer = -101
+scroll_offset = Vector2( 1, 1 )
+
+[node name="Mountain" type="ParallaxLayer" parent="ParallaxBackground2/Pine1/Mountain"]
+position = Vector2( 0, 323 )
+motion_scale = Vector2( 0.2, 1 )
+motion_mirroring = Vector2( 688, 0 )
+
+[node name="Sky" type="ParallaxBackground" parent="ParallaxBackground2/Pine1"]
+layer = -102
+scroll_offset = Vector2( 1, 0 )
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground2/Pine1/Sky"]
+position = Vector2( 0, 264 )
+motion_mirroring = Vector2( 688, 0 )
+
+[node name="Sky" type="Sprite" parent="ParallaxBackground2/Pine1/Sky/Sky"]
+position = Vector2( -7, -809.702 )
+scale = Vector2( 1.44667, 1.7024 )
+texture = ExtResource( 5 )
+centered = false
+offset = Vector2( 0, 1 )
+
+[node name="Sky2" type="Sprite" parent="ParallaxBackground2/Pine1/Sky/Sky"]
+visible = false
+position = Vector2( -19, -281 )
+scale = Vector2( 2.62716, -0.272383 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Sky3" type="Sprite" parent="ParallaxBackground2/Pine1/Sky/Sky"]
+visible = false
+position = Vector2( 505, -92 )
+scale = Vector2( 0.265988, -1.56872 )
+texture = ExtResource( 1 )
+centered = false

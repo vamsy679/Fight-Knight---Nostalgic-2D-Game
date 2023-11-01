@@ -1,0 +1,1 @@
+Obtido em: https://adwitr.itch.io/pixel-health-bar-asset-pack-2

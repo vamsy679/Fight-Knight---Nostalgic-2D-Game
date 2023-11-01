@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/platformer_level03.mp3-07d0b1cdaf63c368bff32fbf9b2d7c04.mp3str"
+
+[deps]
+
+source_file="res://Font/Sunny-land-assets-files/Sound/platformer_level03.mp3"
+dest_files=[ "res://.import/platformer_level03.mp3-07d0b1cdaf63c368bff32fbf9b2d7c04.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

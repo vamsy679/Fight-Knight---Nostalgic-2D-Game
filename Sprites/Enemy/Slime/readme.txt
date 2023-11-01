@@ -1,0 +1,1 @@
+Obtido em: https://rvros.itch.io/pixel-art-animated-slime

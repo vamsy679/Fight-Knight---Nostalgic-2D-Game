@@ -1,0 +1,1 @@
+Obtido em: https://startledpixels.itch.io/2d-pixel-item-asset-pack

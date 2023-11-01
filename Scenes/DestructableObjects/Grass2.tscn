@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/DestructableObject.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/TileSet/Tile_set_24x24.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 23, 15 )
+
+[node name="Grass" type="KinematicBody2D"]
+collision_layer = 8
+script = ExtResource( 1 )
+min_division_parts = 10
+max_division_parts = 14
+min_width = -48.0
+max_width = 48.0
+min_height = 0.0
+max_height = -50.0
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -24, -26 )
+scale = Vector2( 1.84, 1.66667 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 143.951, 175.289, 25.6671, 18.9937 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1, -12 )
+shape = SubResource( 1 )
