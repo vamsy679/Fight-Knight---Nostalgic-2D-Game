@@ -1,2 +1,4 @@
-# FightKnight-GameProgrammingproject-
-Godot Game Engine - Design and Programming of Video Games
+# FightKnight-GameProgrammingProject-
+Godot Game Engine - Design and Programming of Computer Games - TDDD23 LiU
+
+Run by installing Godot Game Engine and import this file :)
