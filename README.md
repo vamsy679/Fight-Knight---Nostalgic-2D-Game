@@ -1,5 +1,5 @@
-# FightKnight! - 2D Game made on Godot Game Engine 
+# FightKnight! - 2D Game made on Godot Game Engine. Contains 2 Levels and a final boss to beat!
 
-Run by installing Godot Game Engine -> download -> import this file :)
+Install Godot Game Engine -> download -> import this file -> Run it on your system :)
 
-Languages used: GDScript
+
